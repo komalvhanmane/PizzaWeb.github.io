@@ -1,0 +1,812 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/*hEADER bar*/
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Navigation bar*/
+#navbar {
+    position: sticky;
+    top: 0;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#navbar::before {
+    content: "";
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    display: block;
+    padding: 26px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+   
+}
+#navbar ul li a:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+   border-radius: 55px;
+}
+/*Home section*/
+
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 750px;
+    justify-content: center;
+    align-items: center;
+}
+#home h1 {
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    background-color: black;
+    opacity: 0.7;
+}
+
+#home::before {
+    content: "";
+    background: url('./Group-of-friends-eating-pizza-and-drinking-wine-e1517317917865.jpg')no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    border-bottom-left-radius: 250px;
+    border-bottom-right-radius: 250px;
+}
+.btn2 {
+    margin-top: 20px;
+    padding: 16px 30px;
+    cursor: pointer;
+    background-color:  rgb(228, 189, 19);
+     border-radius: 4px;
+    border-color:rgb(228, 189, 19) ;
+    }
+.btn2:hover {
+        content: "";
+        background-color: white;
+        border-color: white;
+    }
+.btn3 {
+    margin-top: 20px;
+    padding: 16px 30px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border-radius: 4px;
+    border-color: rgb(255, 255, 255);
+}
+.btn3:hover {
+    color:black;
+    content: "";
+    background-color: rgb(255, 255, 255);
+    border-color: white;
+}
+/*pizz section*/
+.pizz{
+    display: flex;
+    justify-content: center;
+    margin-top: -220px;
+    backface-visibility: visible;
+}
+/*dishes section*/
+/*services section*/
+
+#services {
+    margin: 34px;
+    display: flex;
+    margin-top: auto;
+}
+
+#services .box {
+    border: 2px white;
+    padding: 50px;
+    margin: 4px 3px;
+    border-radius: 40px;
+}
+#services .box:hover {
+   border-style: outset;
+}
+#services .box h2{
+   align-items: center;
+   color: rgb(228, 19, 19);
+   padding-top: 20px;
+}
+#services .box p{
+    content: flex;
+    align-items: center;
+   justify-content: center;
+   padding: 30px;
+}
+
+#services .box img {
+    height: 200px;
+    margin: auto;
+    display: block;
+    border-radius: 50px;
+}
+
+.services-container {
+    
+    height: 100%;
+}
+
+.h-primary {
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: fantasy;
+}
+
+.h-secondary {
+    font-size: 1.8rem;
+    
+}
+.centre {
+    text-align: center;
+}
+/*servic section*/
+
+#servic{
+    margin: 34px;
+    display: flex;
+    margin-top: auto;
+  
+}
+
+.service{
+    background-color:  rgb(228, 189, 19);
+    
+    border-radius: 30px;
+    border-style: inset;
+    border-color: rgb(228, 19, 19);
+    border-width: 50px;
+}
+.service h1{
+  font-size: 3rem;
+}
+#servic .box {
+  
+    padding: 74px;
+    margin: 4px 3px;
+    
+   
+}
+#servic .box:hover {
+  border-style: outset;
+  border-color: rgb(255, 255, 255);
+  border-width: 25px;
+   
+}
+#servic .box h2{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px;
+    margin: 4px 3px;
+    
+   
+}
+#servic .box a{
+  content:flex;
+  align-items: center;
+  justify-content: center;
+    padding: 10px;
+    margin: 4px 3px;
+    text-decoration: none;
+    color: rgb(228, 19, 19);
+   
+}
+#servic .box a:hover{
+    color: honeydew;
+     
+  }
+#servic .box img {
+    height: 200px;
+    margin: auto;
+    display: block;
+    border-radius: 100px;
+}
+/*ADDRESS section*/
+
+#Address {
+    margin: 34px;
+    display: flex;
+    margin-top: auto;
+}
+#LOC {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+}
+#LOC p b{
+    color: rgb(228, 19, 19);
+}
+
+#Address .box {
+    border: 2px rgb(17, 4, 4);
+    padding: 84px;
+    margin: 6px 3px;
+}
+#Address .box H2{
+    color: rgb(228, 19, 19);
+}
+/*location section*/
+.touch{
+    background-color: rgb(238, 223, 211);
+}
+#locate {
+    margin: 34px;
+    display: flex;
+    margin-top: auto;
+}
+
+#locate .box {
+    border: 2px rgb(17, 4, 4);
+    padding: 94px;
+    margin: 4px 3px;
+    border-radius: 40px;
+    }
+#locate .box p{
+        font-size: 1.5rem;
+        }
+.btn4 {
+    margin-top: 20px;
+    padding: 16px 30px;
+    cursor: pointer;
+    background-color: transparent;
+     border-radius: 4px;
+    border-color:rgb(228, 19, 19) ;
+    }
+.btn4:hover {
+        content: "";
+        background-color:rgb(228, 19, 19);
+        border-color: rgb(228, 19, 19);
+        color: white;
+    }
+/*location section*/
+#types{
+    display: flex;
+    flex-direction: column;
+    height: 950px;
+    justify-content: center;
+    align-items: center;
+}
+
+#types h1 {
+    color: rgb(0, 0, 0);
+    font-size: 4rem;
+}
+
+#types p b{
+    color: rgb(228, 19, 19);
+}
+
+/*MENU section*/
+
+#MENU {
+    margin: 34px;
+    display: flex;
+    margin-top: 100px;
+}
+
+#MENU .box {
+    border: 2px white;
+    padding: 50px;
+    margin: 4px 3px;
+    border-radius: 40px;
+   
+}
+
+#MENU .box h2{
+   align-items: center;
+   color: rgb(228, 19, 19);
+   padding-top: 20px;
+}
+
+
+#MENU .box img {
+    height: 300px;
+    margin: auto;
+    display: block;
+    
+}
+
+#MENU .boxup {
+
+    padding: 50px;
+    margin-top: -50px;
+  
+    padding-top: -300px;
+}
+
+#MENU .boxup h2{
+   align-items: center;
+   color: rgb(228, 19, 19);
+   padding-top: 20px;
+}
+
+
+#MENU .boxup img {
+    height: 300px;
+    margin: auto;
+    display: block;
+    
+}
+#MENU .boxup:hover{
+  box-shadow: 10px 10px 10px 10px rgb(228, 19, 19);
+}
+.up{
+    margin-top: -150px;
+    padding-top: -200px;
+}
+#deals{
+    content: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 120px;
+}
+/*services section*/
+
+#serv {
+    margin: 34px;
+    display: flex;
+    margin-top: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#serv .box {
+    border: 2px white;
+    padding: 50px;
+    margin: 4px 3px;
+    border-radius: 40px;
+}
+
+#serv .box h2{
+   align-items: center;
+   color: rgb(0, 0, 0);
+   padding-top: 20px;
+}
+#serv .box a{
+    text-decoration: none;
+    color: rgb(78, 78, 78);
+}
+
+#serv .box a:hover{
+   
+    color: rgb(0, 0, 0);
+}
+
+
+.services-container {
+    
+    height: 100%;
+}
+footer {
+    background: rgb(192, 176, 176);
+    color: rgb(0, 0, 0);
+    padding: 10px 10px;
+}
+/*oUR MENU section*//*oUR MENU section*//*oUR MENU section*//*oUR MENU section*//*oUR MENU section*//*oUR MENU section*/
+#onavbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#onavbar h1{
+    color: cornsilk;
+    text-align: center;
+    
+ }
+#onavbar {
+    position: sticky;
+    top: 0;
+}
+#onavbar::before {
+    content: "";
+  background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#onavbar ul{
+    display: flex;
+}
+#onavbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#onavbar ul li a{
+    display: block;
+    padding: 16px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+   font-family: sans-serif;
+  
+}
+#onavbar ul li a:hover {
+    color: rgb(14, 1, 1);
+    background-color: white;
+    border-radius: 30px;
+}
+#OURMENUHOME {
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+#OURMENUHOME h1 {
+    color: rgb(0, 0, 0);
+    font-size: 5rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    border-radius: 20px;
+}
+
+#OURMENUHOME::before {
+    content: "";
+    background: url('./pizza-on-a-wooden-table-with-ingredients-from-top-view-W9BF9D.jpg')repeat fixed 100%/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    border-bottom-left-radius: 850px;
+    border-bottom-right-radius: 850px;
+}
+/*MENU section*/
+
+#OMENU {
+    margin: 34px;
+    display: flex;
+   padding-left: 75px;
+   
+}
+
+#OMENU .box {
+    border: 2px white;
+    padding: 50px;
+    margin: 4px 3px;
+    border-radius: 40px;
+   
+}
+
+#OMENU.box h1{
+   align-items: center;
+   color: rgb(228, 19, 19);
+   padding-top: 20px;
+   background-color: black;
+    opacity: 0.7;
+}
+
+
+#OMENU .box img {
+    height: 300px;
+    margin: auto;
+    display: block;
+    
+}
+
+#OMENU .boxup {
+
+    padding: 50px;
+    margin-top: -50px;
+  
+    padding-top: -300px;
+}
+
+#OMENU .boxup h2{
+   align-items: center;
+   color: rgb(228, 19, 19);
+   padding-top: 20px;
+}
+
+
+#OMENU .boxup img {
+    height: 300px;
+    margin: auto;
+    display: block;
+    
+}
+/*services section*/
+
+#Oservices {
+    margin: 34px;
+    display: flex;
+    margin-top: auto;
+    padding-left: 90px;
+    padding-right: 100px;
+    
+}
+
+#Oservices .box {
+    
+    padding: 5px;
+    margin: 0px 0px;
+   
+}
+
+#Oservices .box h2{
+  
+   color: rgb(0, 0, 0);
+   padding-top: 20px;
+   font-size: 1.5rem;
+}
+
+
+#Oservices.box img {
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+
+.Oservices-container{
+    background-color: wheat;
+}
+/*choice section*/
+#choice{
+    content: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 34px;
+    display: flex;
+    margin-top: auto;
+}
+#choices .box {
+    
+    padding: 5px;
+    margin: 0px 0px;
+   
+}
+#choices.box h2{
+  
+    color: rgb(221, 25, 25);
+    padding-top: 20px;
+    font-size: 1.5rem;
+ }
+ #choices.box h3{
+  
+    color: rgb(134, 134, 134);
+    padding-top: 20px;
+    font-size: 1rem;
+    align-items: flex-start;
+ }
+ .choices{
+     border-color: brown;
+     background-color: burlywood;
+ }
+
+
+
+/*ABOUT US SECTION*/
+#ABOUTHOME {
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+#ABOUTHOME h1 {
+    color: rgb(255, 255, 255);
+    font-size: 5rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
+    opacity: 0.7;
+    border-radius: 20px;
+}
+
+#ABOUTHOME::before {
+    content: "";
+    background: url('./Feature-White-Clam-Pizza-Pasquale-Jones-Trend-NYC-Recipe1.jpg')repeat fixed 100%/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    border-bottom-left-radius: 950px;
+    border-bottom-right-radius: 950px;
+    margin-top: -150px;
+}
+/*services section*/
+
+#aservices {
+    margin: 34px;
+    display: flex;
+    margin-top: auto;
+    padding-left: 100px;
+    padding-right: 800px;
+    height: 750px;
+    
+}
+
+#aservices .box {
+    border-color: crimson;
+    padding: 13px;
+  height: 450px;
+   background-color: white;
+}
+
+#aservices .box h2{
+  
+   color: rgb(206, 29, 29);
+   padding: 19px;
+   font-size: 1.5rem;
+}
+
+
+.aservices-container::before {
+    content: "";
+    background: url('./healthy-barbecue-chicken-pizza.jpg') repeat fixed 100%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+  
+    margin-top: -150px;
+}
+/*services section*/
+
+#a1services {
+    margin: 34px;
+    display: flex;
+    justify-content: right;
+    margin-top: auto;
+    padding-left: 800px;
+    padding-right: 100px;
+    height: 750px;
+    
+}
+
+#a1services .box {
+    border-color: crimson;
+    padding: 35px;
+    height: 450px;
+    margin: 0px 0px;
+   background-color: white;
+}
+
+#a1services .box h2{
+  
+   color: rgb(206, 29, 29);
+   padding: 40px;
+   font-size: 1.5rem;
+}
+
+
+.a1services-container::before {
+    content: "";
+    background: url('./crispy-cheesy-pan-pizza.jpg') repeat fixed 100%;
+    position: absolute;
+    height: 750px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+  
+    margin-top: -150px;
+}
+
+
+/*OFFER*/
+
+/*ABOUT US SECTION*/
+#OFFERHOME {
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+#OFFERHOME h1 {
+    color: rgb(255, 253, 253);
+    font-size: 5rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
+    opacity: 0.7;
+    border-radius: 20px;
+}
+
+#OFFERHOME::before {
+    content: "";
+    background: url('./home\ background.jpg')repeat fixed 100%/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    border-bottom-left-radius: 950px;
+    border-bottom-right-radius: 950px;
+    margin-top: -150px;
+}
+#CONTACTHOME {
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+#CONTACTHOME h1 {
+    color: rgb(255, 255, 255);
+    font-size: 5rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-bottom: 50px;
+    padding-top: -100px;
+    border-radius: 20px;
+    background-color: black;
+    opacity: 0.7;
+}
+
+#CONTACTHOME::before {
+    content: "";
+    background: url('./Ra602e604412b53565f75bbbd532cf373.jfif')repeat fixed 100%/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    border-bottom-left-radius: 950px;
+    border-bottom-right-radius: 950px;
+    margin-top: -150px;
+}
+/*CONTACT*/
+#contactform {
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -200px;
+    
+}
+#contactform .form-group{
+   padding: 25px;
+   gap: 13px;
+    
+}
+#contact-box{
+   background-color: rgb(241, 241, 233);
+  border-radius: 25px;
+  
+}
+#contact-box:hover{
+  box-shadow: 10px 10px 10px 10px gray;
+   
+ }
+input[type=text],input[type=number],input[type=email], select,textarea{
+    width: fit-content;
+    padding: 12px;
+}
+
+
